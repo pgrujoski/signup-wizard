@@ -24,10 +24,10 @@ const Finish = () => {
   };
 
   return (
-    <div>
+    <div className="container finish">
       <h1>Congratulations, you applied successfully!</h1>
       <div>
-        <h2>Personal information</h2>
+        <h2>Personal Information</h2>
         <p>
           <strong>First Name:</strong> {firstName}
         </p>

@@ -26,6 +26,7 @@ const Step4 = () => {
     <form onSubmit={(e) => e.preventDefault()}>
       <label>
         Select a course:
+        <br />
         <select value={selectedOption} onChange={handleOptionsChange}>
           <option value="0">Select...</option>
           <option value="1">Front end developer</option>
