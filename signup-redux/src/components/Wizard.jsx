@@ -7,7 +7,7 @@ import Step4 from "./Step4";
 import Finish from "./Finish";
 
 const Wizard = () => {
-  const step = useSelector((state) => state.wizardSlice.value);
+  const step = useSelector((state) => state.wizard.value);
 
   const Steps = () => {
     switch (step) {

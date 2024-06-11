@@ -7,7 +7,7 @@ import inputReducer from "../slices/inputSlice";
 export const store = configureStore({
   reducer: {
     signup: signReducer,
-    wizardSlice: wizardReducer,
+    wizard: wizardReducer,
     location: addressReducer,
     inputs: inputReducer,
   },

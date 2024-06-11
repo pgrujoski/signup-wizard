@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const Finish = () => {
   const firstName = useSelector((state) => state.signup.firstName);
-  const lastName = useSelector((state) => state.sigunup.lastname);
+  const lastName = useSelector((state) => state.signup.lastName);
   const username = useSelector((state) => state.signup.username);
   const email = useSelector((state) => state.signup.email);
   const selectedOption = useSelector((state) => state.inputs.selectedOption);
