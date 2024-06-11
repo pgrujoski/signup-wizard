@@ -6,8 +6,8 @@ import { setWizardStep } from "../slices/wizardSlice";
 const Step3 = () => {
   const dispatch = useDispatch();
 
-  const street = useSelector((state) => state.location.address);
-  const number = useSelector((state) => state.location.city);
+  const address = useSelector((state) => state.location.address);
+  const city = useSelector((state) => state.location.city);
   const postal_code = useSelector((state) => state.location.postal_code);
 
   return (
@@ -41,8 +41,8 @@ const Step3 = () => {
         type="text"
       />
       <br />
-      <button onClick={(e) => dispatch(setWizardStep(2))}>Previous</button>
-      <button onClick={(e) => dispatch(setWizardStep(4))}>Next</button>
+      <button onClick={() => dispatch(setWizardStep(2))}>Previous</button>
+      <button onClick={() => dispatch(setWizardStep(4))}>Next</button>
     </form>
   );
 };
